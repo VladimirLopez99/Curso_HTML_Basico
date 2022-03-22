@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: brown;
+}
+
+body{
+    height: 100vh;
+    background: url(beach.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: #e99869;
+    padding: 15px 40px;
+}
+
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(90deg, #3aff9c, #cc1937);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name{
+    color: cornflowerblue;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.age{
+    font-size: 18px;
+    color:#500202
+}
+
+.job{
+    color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #9b0000;
+    border: 2px solid #9b0000;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+
+.contact-btn:hover{
+    background: #9b0000;
+    color: bisque;
+}
+
+.card-footer{
+    background: rgb(169, 207, 111);
+    padding: 4px 10px;
+}
+
+.cskills{
+    color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.skills{
+    color: #78259e;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.skills1{
+    color: #78259e;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.skills2{
+    color: #78259e;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.about{
+    font: bold 12px/1.5 arial, helvetica, sans-serif;
+    color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
